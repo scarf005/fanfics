@@ -1,0 +1,25 @@
+---
+type Props = {
+  amount?: number
+}
+
+const { amount = 1 } = Astro.props
+const star = "✴"
+const content = `"${star.repeat(amount)}"`
+---
+
+<hr />
+
+<style define:vars={{ content }}>
+  hr {
+    border: none;
+    text-align: center;
+    line-height: 10em;
+  }
+
+  hr::before {
+    content: var(--content);
+    font-size: 1em;
+    color: #000;
+  }
+</style>

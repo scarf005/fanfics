@@ -1,0 +1,8 @@
+{
+  "extends": "astro/tsconfigs/strictest",
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "baseUrl": ".",
+    "paths": { "~/*": ["./src/*"] }
+  }
+}

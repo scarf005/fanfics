@@ -1,0 +1,24 @@
+{
+  "name": "fanfics",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "pages": "pnpm build && touch dist/.nojekyll && pnpm gh-pages -d dist -t true"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^0.19.7",
+    "@astrojs/rss": "^2.4.3",
+    "@astrojs/sitemap": "^1.4.0",
+    "astro": "^2.8.3"
+  },
+  "devDependencies": {
+    "fontaine": "^0.4.0",
+    "gh-pages": "^5.0.0",
+    "prettier": "^3.0.0"
+  }
+}

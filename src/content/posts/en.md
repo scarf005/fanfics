@@ -1,4 +1,10 @@
-# Raspberries
+---
+title: Raspberries
+description: "[글알못 팬픽대회](https://izayoi16.tistory.com/21)에 [낸 글](https://izayoi16.tistory.com/40)입니다."
+
+pubDate: 2020-07-10
+image: https://images.unsplash.com/photo-1604520024836-a8cde7f2610e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+---
 
 I stand alone in the tropical rainforest. There's no sound.
 
@@ -202,7 +208,7 @@ I ran to find Renko. My legs were sore, but I kept running. The trail led to a c
 
 And in the middle of the clearing, there was a monster. It was the largest one I had ever seen in my dreams.
 
-I still couldn't decipher the monster's face. It could be because of the lucid dream, but I wasn't sure. However, i could be  certain on one thing: if I do not confront it, I will not see Renko again.
+I still couldn't decipher the monster's face. It could be because of the lucid dream, but I wasn't sure. However, i could be certain on one thing: if I do not confront it, I will not see Renko again.
 
 Out of the blue, anger welled up inside me. I wanted to kill that monster. I wanted to hurt it. It didn't matter if one of us died.
 
