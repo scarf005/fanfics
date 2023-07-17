@@ -65,7 +65,7 @@
 <p>“세상에, 네가 약속 시간보다 일찍 오는 날이 다 있네. 오늘은 해가 서쪽에서 뜨니?”</p>
 <p>노트북 화면을 살짝 낮추니 익숙한 장면이다. 한명은 뾰루퉁한 채로 앉아있고 나머지 한 명은 지각한 것을 멋쩍게 웃으며 흘러넘기는 모습. 하지만 이번에는 다르다. 지각한 게 내가 아니니까!</p>
 <p>“대체 나를 평소에 어떻게 보는 거야.”</p>
-<p>나는 툴툴대면서도 속으로 진땀을 뺐다. 그도 그럴 것이 사실 약속 장소 전날부터 이미 여기 있었기 때문이다. 밤을 새서 노트북을 쓰다 그대로 눈을 감았다 뜨니 시간이 되었을 뿐. 엄밀히 말하면 24시간 지각인가? 하지만 지금은 내가 유리한 상황이니 입을 다물었다.</p>
+<p>나는 툴툴대면서도 속으로 진땀을 뺐다. 그도 그럴 것이 사실 약속 장소에 어제부터 그대로 있었으니까. 밤을 새서 노트북을 쓰다 그대로 눈을 감았다 뜨니 그대로 약속 시간. 엄밀히 말하면 24시간 지각인가? 하지만 지금은 내가 유리한 상황이니 입을 다물었다.</p>
 <p>“라떼 하나만 시키고 올게.”</p>
 <p>“설탕 너무 많이 넣지는 마.”</p>
 <p>“아직은 당뇨 아니니까 괜찮아.”</p>
@@ -154,10 +154,12 @@
 <span class="line"><span style="color: #F97583">def</span><span style="color: #E1E4E8"> </span><span style="color: #B392F0">solution1</span><span style="color: #E1E4E8">(lst: list[</span><span style="color: #79B8FF">int</span><span style="color: #E1E4E8">]) -> list[</span><span style="color: #79B8FF">int</span><span style="color: #E1E4E8">]:</span></span>
 <span class="line"><span style="color: #E1E4E8">    result </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> []</span></span>
 <span class="line"><span style="color: #E1E4E8">    </span><span style="color: #F97583">for</span><span style="color: #E1E4E8"> x </span><span style="color: #F97583">in</span><span style="color: #E1E4E8"> lst:</span></span>
-<span class="line"><span style="color: #E1E4E8">        </span><span style="color: #F97583">if</span><span style="color: #E1E4E8"> odd(x):</span></span>
-<span class="line"><span style="color: #E1E4E8">            tmp </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> add3(x)</span></span>
-<span class="line"><span style="color: #E1E4E8">            </span><span style="color: #F97583">if</span><span style="color: #E1E4E8"> is_less20(tmp):</span></span>
-<span class="line"><span style="color: #E1E4E8">                result.append(tmp)</span></span>
+<span class="line"><span style="color: #E1E4E8">        </span><span style="color: #F97583">if</span><span style="color: #E1E4E8"> </span><span style="color: #F97583">not</span><span style="color: #E1E4E8"> odd(x):</span></span>
+<span class="line"><span style="color: #E1E4E8">            </span><span style="color: #F97583">continue</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #E1E4E8">        tmp </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> add3(x)</span></span>
+<span class="line"><span style="color: #E1E4E8">        </span><span style="color: #F97583">if</span><span style="color: #E1E4E8"> is_less20(tmp):</span></span>
+<span class="line"><span style="color: #E1E4E8">            result.append(tmp)</span></span>
 <span class="line"><span style="color: #E1E4E8">    </span><span style="color: #F97583">return</span><span style="color: #E1E4E8"> result</span></span>
 <span class="line"></span>
 <span class="line"><span style="color: #6A737D"># 리스트 컴프리헨션 방법</span></span>
@@ -259,9 +261,9 @@
 
 
 <table><thead><tr><th align="left">카테고리 \ 기호</th><th align="center"><code>f</code></th><th align="center"><code>g</code></th><th align="center"><code>h</code></th><th align="center"><code>.</code></th><th align="center"><code>id</code></th></tr></thead><tbody><tr><td align="left">덧셈</td><td align="center">1</td><td align="center">2</td><td align="center">3</td><td align="center"><code>+</code></td><td align="center">0</td></tr><tr><td align="left">곱셈</td><td align="center">1</td><td align="center">2</td><td align="center">3</td><td align="center"><code>*</code></td><td align="center">1</td></tr><tr><td align="left">함수</td><td align="center"><code>add3</code></td><td align="center"><code>mult2</code></td><td align="center"><code>sub10</code></td><td align="center"><code>.</code></td><td align="center"><code>id</code></td></tr></tbody></table>
-<p>“그러니까 함수들은 카테고리이기 때문에 덧셈이나 곱셈처럼 하나로 합칠수 있다는 뜻이네?”</p>
-<p>“바로 그거야.”</p>
-<p>“그런데 이렇게 길게 설명한 건 모나드랑 카테고리랑 어떤 관계인지 알려주려고 한 건데 모나드에 대한 설명은 없네.”</p>
+<p>“그러니까 함수들은 카테고리이기 때문에 덧셈이나 곱셈처럼 하나로 합칠수 있다는 거고, 그게 함수 합성인 거네?”</p>
+<p>“잘 이해했네.”</p>
+<p>“그런데 이렇게 길게 설명한 건 모나드랑 카테고리랑 어떤 관계인지 알려주려고 한 것일 텐데 모나드에 대한 설명은 없네.”</p>
 <p>“사실 여기서부터 좀 어려워지거든.”</p>
 <p>“나 갈께.”</p>
 <p>“아니아니아니 잠깐만 기다려줘 응?”</p>
@@ -336,19 +338,19 @@
 <span class="line"></span>
 <span class="line"><span style="color: #F97583">|||</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">IO</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">String</span><span style="color: #E1E4E8"> 에서 String을 뽑아서 putStrLn에 건내주는 함수</span></span>
 <span class="line"><span style="color: #E1E4E8">main </span><span style="color: #F97583">:</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">IO</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">()</span></span>
-<span class="line"><span style="color: #E1E4E8">main </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> getLine </span><span style="color: #F97583">>>=</span><span style="color: #E1E4E8"> putStrLn </span></span>
+<span class="line"><span style="color: #E1E4E8">main </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> getLine </span><span style="color: #F97583">>>=</span><span style="color: #E1E4E8"> putStrLn</span></span>
 <span class="line"></span>
 <span class="line"><span style="color: #6A737D">-- 문법 설탕, do 표기법을 쓰면</span></span>
 <span class="line"><span style="color: #E1E4E8">main </span><span style="color: #F97583">:</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">IO</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">()</span></span>
 <span class="line"><span style="color: #E1E4E8">main </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> </span><span style="color: #F97583">do</span></span>
 <span class="line"><span style="color: #E1E4E8">  input </span><span style="color: #F97583">&#x3C;-</span><span style="color: #E1E4E8"> getLine</span></span>
 <span class="line"><span style="color: #E1E4E8">  putStrLn input</span></span></code></pre>
-<p>“문법 설탕이 좀 많이 다네. 거의 파이썬인걸. 언어에 이런게 이렇게 많아도 돼?”</p>
+<p>“문법 설탕이 좀 많이 다네. 모르고 보면 거의 파이썬인걸. 언어에 설탕이 이렇게 많아도 돼?”</p>
 <p>“그러게.”</p>
-<p>나는 라떼가 비워지는 장면을 천천히 보았다.</p>
+<p>나는 라떼가 비워지는 것을 천천히 보았다.</p>
 <h2 id="에필로그">에필로그</h2>
 <p>“근데 생각보다 재미는 있네. 파이썬에서 쓸만할지는 잘 모르겠지만”</p>
-<p>“…으음 사실 이런거 배워서 일에서 쓰기는 아직은 좀 힘들지.”</p>
+<p>“…으음 사실 이런거 배워서 다른 언어에서 쓰기는 아직은 좀 힘들지.”</p>
 <p>“또 읽을 만한 것 있어?”</p>
 <p>“여기.”</p>
 <ul>
@@ -356,7 +358,7 @@
 <li><a href="https://www.haskellforall.com/2012/08/the-category-design-pattern.html">카테고리 디자인 패턴</a></li>
 <li><a href="https://fsharpforfunandprofit.com/rop/">기찻길 지향 프로그래밍</a></li>
 </ul>
-<p>“근데 너가 보여준 코드들 이거 수도코드야? 하스켈이랑 문법이 좀 다른거 같은데. 어떤 거야?”</p>
+<p>“그리고 너가 보여준 코드들 이거 다 수도코드야? 하스켈이랑 문법이 좀 다른거 같은데. 어떤 거야?”</p>
 <ul>
 <li><a href="https://idris2.readthedocs.io/">Idris2</a></li>
 </ul>
