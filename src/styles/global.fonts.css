@@ -1,0 +1,32 @@
+/* https://cdn.jsdelivr.net/npm/font-kopub@1.0 */
+
+@font-face {
+  font-family: 'KoPub Batang';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: url(https://cdn.jsdelivr.net/npm/font-kopub@1.0/fonts/KoPubBatang-Light.eot);
+  src: url(https://cdn.jsdelivr.net/npm/font-kopub@1.0/fonts/KoPubBatang-Light.eot?#iefix) format('embedded-opentype'), url(https://cdn.jsdelivr.net/npm/font-kopub@1.0/fonts/KoPubBatang-Light.woff) format('woff'), url(https://cdn.jsdelivr.net/npm/font-kopub@1.0/fonts/KoPubBatang-Light.ttf) format('truetype')
+}
+
+@font-face {
+  font-family: 'KoPub Batang';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://cdn.jsdelivr.net/npm/font-kopub@1.0/fonts/KoPubBatang-Medium.eot);
+  src: url(https://cdn.jsdelivr.net/npm/font-kopub@1.0/fonts/KoPubBatang-Medium.eot?#iefix) format('embedded-opentype'), url(https://cdn.jsdelivr.net/npm/font-kopub@1.0/fonts/KoPubBatang-Medium.woff) format('woff'), url(https://cdn.jsdelivr.net/npm/font-kopub@1.0/fonts/KoPubBatang-Medium.ttf) format('truetype')
+}
+
+@font-face {
+  font-family: 'KoPub Batang';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url(https://cdn.jsdelivr.net/npm/font-kopub@1.0/fonts/KoPubBatang-Bold.eot);
+  src: url(https://cdn.jsdelivr.net/npm/font-kopub@1.0/fonts/KoPubBatang-Bold.eot?#iefix) format('embedded-opentype'), url(https://cdn.jsdelivr.net/npm/font-kopub@1.0/fonts/KoPubBatang-Bold.woff) format('woff'), url(https://cdn.jsdelivr.net/npm/font-kopub@1.0/fonts/KoPubBatang-Bold.ttf) format('truetype')
+}
+
+body {
+  font-family: "KoPub Batang", "batang", serif;
+}
